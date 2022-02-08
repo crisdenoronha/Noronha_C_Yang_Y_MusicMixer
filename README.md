@@ -15,7 +15,7 @@ The contributors are Cristine De Noronha and Ying Yang. The folders and the file
 2. Before week 5, Cristine focuses on the design for the project. She designs icons as SVG format for the decoration of music mixer. Ying helps Cristine design music elements and notes. They are both involved in the design. Cristine all design files are in design.cdn.icons and design.cdn.wireframes branches. Ying's music icons are in dev.yy.research.
 
 ## History
-TODO: They have a timetable to do the music mixer. They will finish 80% design for music mixer before week 8. The music mixer is a good project for them to practice JS and they will finish all JS before due date.
+TODO: They have a timetable to do the music mixer. They will finish 80% design for music mixer before week 8. The music mixer is a good project for them to practice JS and they will finish all JS before due date April 9th.
 ## Credits
 TODO: The music mixer is about 20% for credits in the course.
 
