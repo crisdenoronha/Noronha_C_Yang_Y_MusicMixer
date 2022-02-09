@@ -1,5 +1,5 @@
-# 1055-Music Mixer-Soundly Sky
 
+# 1055-Music Mixer-Soundly Sky
 TODO: The repo is for an authored class music project (mmed-1055) which is developed by Cristine De Noronha and Ying Yang. The idea is to make a musical sky with musical icons. In the repository it contains all the images, css file, html files, AI files and PSD files for the course.
 
 ## Installation
