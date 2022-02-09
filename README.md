@@ -1,9 +1,9 @@
-# 1055-Music Mixer
 
-TODO: The repo is for 1055 that is developed by Cristine De Noronha and Ying Yang. In the repo, it contains all images, css file, html files, AI files and PSD files for the course.
+# 1055-Music Mixer-Soundly Sky
+TODO: The repo is for an authored class music project (mmed-1055) which is developed by Cristine De Noronha and Ying Yang. The idea is to make a musical sky with musical icons. In the repository it contains all the images, css file, html files, AI files and PSD files for the course.
 
 ## Installation
-TODO: In the set up processing, it uses visual code for CSS and HTML5 and find ways on [W3Schools](https://www.w3schools.com/). 
+TODO: In the set up processing, it uses visual code for CSS and HTML5 and find ways on [MDN Web Docs](https://developer.mozilla.org/en-US/). 
 And the developer also uses [Adobe Photoshop and Adobe Illustrator](https://www.adobe.com/ca_fr/).
 
 ## Usage
