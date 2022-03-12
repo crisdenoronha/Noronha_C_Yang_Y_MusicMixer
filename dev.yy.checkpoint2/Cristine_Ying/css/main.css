@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin: 0px;
+	border: 0px;
+	background-image:url(../images/backimage@2x-100.jpg);
+	background-repeat:repeat;
+	color:#333;
+	font-family: 'Luckiest Guy', sans-serif;
+	font-size:16px;
+}
+
+#game-boards {
+	width: 100%;
+	text-align: center;
+}
+
+.puzzle-board {
+	margin-top: 40px;
+	height: 300px;
+	display: inline-block;
+	border: medium solid #333;
+	background-color: #fff;
+	color: inherit;
+	overflow: hidden;
+}
+
+.puzzle-pieces {
+	width: 1200px;
+	margin-left: 150px;
+	display: flex;
+    flex-direction: row;
+	height: 150px;
+	padding: 10px;
+	background-color: #333;
+}
+
+.puzzle-board { 
+	width:1200px; 
+	background-image: url('../images/backGround0.jpg');
+	background-repeat: no-repeat;
+}
+
+.puzzle-image {
+	width: 40%;
+	display: block;
+	padding: 8px;
+	cursor: pointer;
+}
+
+.puzzle-image:nth-child(even) {
+	float: right;
+	clear: both;
+}
+.puzzle-image:nth-child(odd) {
+	float: left;
+	clear: both;
+}
+
+.drop-zone {
+	width: 49.5%;
+  height: 49.5%;
+  border: thin dashed white;
+  float: left;
+	position: relative;
+}
+
+.drop-zone img {
+	width: 80% !important;
+	float: none;
+	position: absolute;
+	padding: 0;
+}
+
+.topLeft img {
+	right: 0;
+	bottom: 0;
+}
+
+.topRight img {
+	bottom: 0;
+}
+
+.bottomLeft img {
+	right: 0;
+}
+
+
+/*---------above  .drop-zone img is good for the design and resize the image after the image is dragged on the background----------*/
+
+header {
+	position: relative;
+	top: 20px;
+	width:600px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 3.25em;
+  letter-spacing: 3px;
+	margin: 10px 0
+}
+
+header p, footer p { 
+	font-size: 1.7em; 
+	letter-spacing: 2px; 
+	margin-top: -50px;
+	margin-bottom: -10px; 
+}
+
+footer {
+	position: relative;
+	top: 65px;
+	width:600px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#buttonHolder {
+	margin: 0px auto;
+	text-align:center;
+}
+
+#buttonHolder img {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 30px;
+	margin-bottom: 80px;
+	border-radius: 20px;
+	border: thin solid #333;
+	cursor: pointer;
+}
+
+#buttonHolder img:hover {
+	opacity:.5;
+}
+
+
+/*-------------------------*/
+
+.sound-icons {
+    display: flex;
+    flex-wrap: nowrap;
+	margin: 20px;
+	margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: right;
+    max-width: 1280px;
+}
+
+
+.audio-controls { 
+	margin-top: 1.5em; 
+	margin-left: 4em;
+	align-items: center;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.audio-controls button {
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+  background-color: #333;
+  color: white;
+  font-size: 1.25em;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.track-ref { cursor: pointer; padding: 1em; }
+
