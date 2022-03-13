@@ -1,0 +1,351 @@
+@charset "utf-8";
+/*@import url();*/
+/* CSS Document */
+body {
+	margin: 0px;
+	border: 0px;
+	color:#D19954;
+    font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+    
+}
+.day {background-color: #FFF;}
+.night {background-color: #1D1D1B;}
+.hidden { display: none; }
+
+/*------------ header ------------*/
+#headLine {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1280px;
+}
+
+#panel {
+    min-width: 200px;
+}
+
+.sound-icons {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.button { 
+    width: 35px;
+    margin-right: 5px;
+}
+.title1 {
+    font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+    margin: auto 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*------------ drop-sky ------------*/
+#drop-sky {background-color: #FFF;}
+#drop-sky-night {background-color: #1D1D1B;}
+
+#sky {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    height: 660px;
+    width: 1194px;
+    background-image: url('../images/sky_day.svg');
+	background-repeat: no-repeat;
+}
+
+#skyNight {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    height: 660px;
+    width: 1194px;
+    background-image: url('../images/sky_night.svg');
+	background-repeat: no-repeat;
+}
+
+
+#sky-mobile {
+    display: none;    
+}
+
+#skyNight-mobile {
+    display: none;    
+}
+
+.drop-zone {
+  width: 49.5%;
+  height: 49.5%;
+  float: left;
+  position: relative;
+}
+
+/* reset the drop zone images */
+.drop-zone object {
+	width: 80% !important;
+	float:none;
+	position: absolute;
+	padding: 0;
+}
+
+.tl object{ right:0; bottom:0; }
+.tr object{ bottom:0; }
+.bl object{ right:0; }
+
+
+
+
+/*------------ footer ------------*/
+.footer {
+    width: 100%;
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 1280px;
+    height: 250px;
+    
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2px 5px;
+    height: 100px;
+}
+
+#button_day {
+  width: 200px;
+  margin: 1px auto;
+  
+}
+
+#button_day img:hover {
+    background-color: #cccc;
+}
+
+.icons {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 972px;
+}
+
+.puzzle-image {
+	width: 100%;
+	margin: auto;
+	cursor: pointer;
+}
+
+.puzzle-image:nth-child(even) {
+	float: right;
+	clear: both;
+}
+.puzzle-image:nth-child(odd) {
+	float: left;
+	clear: both;
+}
+
+.box {
+    background-color: #EDEDED;
+    padding: 2px;
+    width: 78px;
+    height: 74px;
+    border-radius: 7px;
+    align-items: center;
+    margin: 5px;
+}
+
+.icon {margin: auto; width: 100%}
+
+.title2 {
+    font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+    text-align: center;
+    margin: 2px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 650px) {
+
+/*------------ header ------------*/
+
+#panel {
+    min-width: 100px;
+}
+
+/*------------ drop-sky ------------*/
+#sky-mobile {
+    display: none;    
+}
+
+#skyNight-mobile {
+    display: none;    
+}
+
+/*------------ footer ------------*/
+
+.footer {
+    width: 100%;
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 1280px;
+    height: 300px;
+    
+}
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2px 5px;
+
+}
+
+#button_day {
+  max-width: 110px;
+  margin: 1px auto;
+}
+
+.icons {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 972px;
+}
+
+.box {
+    background-color: #EDEDED;
+    padding: 2px;
+    width: 78px;
+    height: 74px;
+    border-radius: 7px;
+    align-items: center;
+    margin: 5px;
+}
+
+.icon {margin: auto; width: 100%}
+
+.title2 {
+    font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+
+ }
+
+ @media screen and (max-width: 520px) {
+
+    /*------------ header ------------*/
+    
+    #panel {
+        min-width: 100px;
+    }
+
+    .title1 {
+        display: none;
+    }
+
+    /*------------ drop-sky ------------*/
+    
+    #sky {
+        display: none;
+    }
+
+    #sky-mobile {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        height: 540px;
+        width: 360px;
+        background-image: url('../images/sky_day_m.svg');
+        background-repeat: no-repeat;   
+    }
+
+    #skyNight-mobile {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        height: 540px;
+        width: 360px;
+        background-image: url('../images/sky_night_m.svg');
+        background-repeat: no-repeat;    
+    }
+
+    /*------------ footer ------------*/
+    
+    .footer {
+        width: 100%;
+        margin: 5px auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 1280px;
+        height: 250px;
+        
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        height: 150px;
+    }
+    
+    #button_day {
+      max-width: 110px;
+      margin: 5px auto;
+    }
+    
+    .icons {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 400px;
+    }
+    
+    .box {
+        background-color: #EDEDED;
+        padding: 2px;
+        width: 42px;
+        height: 40px;
+        border-radius: 7px;
+        align-items: center;
+        margin: 5px;
+    }
+    
+    .icon {margin: auto; width: 100%}
+    
+    .title2 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        margin: 2px auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 40px;
+    }
+    
+    
+     }

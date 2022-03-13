@@ -11,8 +11,8 @@ TODO: The repo is for Music Mixer project in 1055 Multimedia Authoring 2.
 
 ## Contributing
 The contributors are Cristine De Noronha and Ying Yang. The folders and the files can be annotated as follow.
-1. Before week 2, Cristine and Ying decides to make the project together. They collect the inspirations that includes images, musics and other softerwares. They both talk about the sketch of music mixer. Ying's research files are all in a branch called dev.yy.research. Cristine's research files are in dev.cdn.research and cristinenoronha-patch-1 branches.
-2. Before week 5, Cristine focuses on the design for the project. She designs icons as SVG format for the decoration of music mixer. Ying helps Cristine design music elements and notes. They are both involved in the design. Cristine all design files are in design.cdn.icons and design.cdn.wireframes branches. Ying's music icons are in dev.yy.research.
+1. Ying studied ways to include music in drag and drop her study is in the [JS_study] folder.
+2. Cristine did layout studies and her files are in the [CSS_study] folder.
 
 ## History
 TODO: They have a timetable to do the music mixer. They will finish 80% design for music mixer before week 8. The music mixer is a good project for them to practice JS and they will finish all JS before due date April 9th.
