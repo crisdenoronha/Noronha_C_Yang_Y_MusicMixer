@@ -11,7 +11,7 @@ TODO: The repo is for Music Mixer project in 1055 Multimedia Authoring 2.
 
 ## Contributing
 The contributors are Cristine De Noronha and Ying Yang. The folders and the files can be annotated as follow.
-1. Ying studied ways to include music in drag and drop her study is in the [JS_study] folder.
+1. Ying studied ways to include music in drag and drop her study is in the [dev.yy.checkpoint2/Cristine_Ying] folder.
 2. Cristine did layout studies and her files are in the [CSS_study] folder.
 
 ## History
