@@ -137,17 +137,17 @@ body {
     max-width: 972px;
 }
 
-.puzzle-image {
+.icon-image {
 	width: 100%;
 	margin: auto;
 	cursor: pointer;
 }
 
-.puzzle-image:nth-child(even) {
+.icon-image:nth-child(even) {
 	float: right;
 	clear: both;
 }
-.puzzle-image:nth-child(odd) {
+.icon-image:nth-child(odd) {
 	float: left;
 	clear: both;
 }
@@ -206,6 +206,8 @@ audio { display: none; }
 
 #skyNight-mobile {
     display: none;
+}
+
 }
 
 @media screen and (max-width: 650px) {
