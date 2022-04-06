@@ -5,9 +5,9 @@ body {
 	margin: 0px;
 	border: 0px;
 	color:#D19954;
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 	font-size: 16px;
-    
+
 }
 .day {background-color: #FFF;}
 .night {background-color: #1D1D1B;}
@@ -24,8 +24,8 @@ body {
     max-width: 1280px;
 }
 
-#panel {
-    min-width: 200px;
+.audio-controls {
+    min-width: 160px;
 }
 
 .sound-icons {
@@ -33,13 +33,13 @@ body {
     flex-wrap: nowrap;
 }
 
-.button { 
+.button {
     width: 35px;
     margin-right: 5px;
 }
 .title1 {
     font-family: 'Raleway', sans-serif;
-	font-size: 24px;
+	  font-size: 24px;
     margin: auto 5px;
     display: flex;
     flex-direction: row;
@@ -47,7 +47,7 @@ body {
 
 
 /*------------ drop-sky ------------*/
-#drop-sky {background-color: #FFF;}
+#drop-sky {background-color: #FFFFFF;}
 #drop-sky-night {background-color: #1D1D1B;}
 
 #sky {
@@ -57,7 +57,7 @@ body {
     height: 660px;
     width: 1194px;
     background-image: url('../images/sky_day.svg');
-	background-repeat: no-repeat;
+	  background-repeat: no-repeat;
 }
 
 #skyNight {
@@ -67,36 +67,34 @@ body {
     height: 660px;
     width: 1194px;
     background-image: url('../images/sky_night.svg');
-	background-repeat: no-repeat;
+	  background-repeat: no-repeat;
 }
 
 
 #sky-mobile {
-    display: none;    
+    display: none;
 }
 
 #skyNight-mobile {
-    display: none;    
+    display: none;
 }
 
 .drop-zone {
-  width: 49.5%;
-  height: 49.5%;
-  float: left;
-  position: relative;
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  border: 3px dashed #D19954;
+	width: 10%;
+	height: 10%;
+	text-align: center;
 }
 
-/* reset the drop zone images */
-.drop-zone object {
-	width: 80% !important;
-	float:none;
-	position: absolute;
-	padding: 0;
-}
 
-.tl object{ right:0; bottom:0; }
-.tr object{ bottom:0; }
-.bl object{ right:0; }
+.one { margin: auto; }
+.two { margin: auto; }
+.three { margin: auto; }
+.four { margin: auto; }
 
 
 
@@ -110,7 +108,7 @@ body {
     flex-direction: column;
     max-width: 1280px;
     height: 250px;
-    
+
 }
 
 .footer-nav {
@@ -124,7 +122,7 @@ body {
 #button_day {
   width: 200px;
   margin: 1px auto;
-  
+
 }
 
 #button_day img:hover {
@@ -155,7 +153,6 @@ body {
 }
 
 .box {
-    background-color: #EDEDED;
     padding: 2px;
     width: 78px;
     height: 74px;
@@ -163,12 +160,14 @@ body {
     align-items: center;
     margin: 5px;
 }
+.colorDay {background-color: #EDEDED;}
+.colorNight {background-color: #4A4A4A;}
 
 .icon {margin: auto; width: 100%}
 
 .title2 {
     font-family: 'Raleway', sans-serif;
-	font-size: 24px;
+    font-size: 24px;
     text-align: center;
     margin: 2px auto;
     display: flex;
@@ -176,21 +175,70 @@ body {
     flex-wrap: wrap;
 }
 
+/*----------audio------------------*/
+audio { display: none; }
+@media screen and (max-width: 810px) {
+
+/*------------ header ------------*/
+
+/*------------ drop-sky ------------*/
+#sky {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 810px;
+    background-image: url('../images/sky_day.svg');
+	  background-repeat: no-repeat;
+}
+
+#skyNight {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 810px;
+    background-image: url('../images/sky_night.svg');
+	  background-repeat: no-repeat;
+}
+
+#sky-mobile {
+    display: none;
+}
+
+#skyNight-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 650px) {
 
 /*------------ header ------------*/
 
-#panel {
-    min-width: 100px;
+/*------------ drop-sky ------------*/
+#sky {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    height: 370px;
+    width: 650px;
+    background-image: url('../images/sky_day.svg');
+	  background-repeat: no-repeat;
 }
 
-/*------------ drop-sky ------------*/
+#skyNight {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    height: 370px;
+    width: 650px;
+    background-image: url('../images/sky_night.svg');
+	  background-repeat: no-repeat;
+}
+
 #sky-mobile {
-    display: none;    
+    display: none;
 }
 
 #skyNight-mobile {
-    display: none;    
+    display: none;
 }
 
 /*------------ footer ------------*/
@@ -203,7 +251,7 @@ body {
     flex-direction: column;
     max-width: 1280px;
     height: 300px;
-    
+
 }
 .footer-nav {
     display: flex;
@@ -226,15 +274,6 @@ body {
     max-width: 972px;
 }
 
-.box {
-    background-color: #EDEDED;
-    padding: 2px;
-    width: 78px;
-    height: 74px;
-    border-radius: 7px;
-    align-items: center;
-    margin: 5px;
-}
 
 .icon {margin: auto; width: 100%}
 
@@ -255,7 +294,7 @@ body {
  @media screen and (max-width: 520px) {
 
     /*------------ header ------------*/
-    
+
     #panel {
         min-width: 100px;
     }
@@ -265,11 +304,9 @@ body {
     }
 
     /*------------ drop-sky ------------*/
-    
-    #sky {
-        display: none;
-    }
 
+    #sky {display: none;}
+    #skyNight {display: none;}
     #sky-mobile {
         margin: auto;
         display: flex;
@@ -277,7 +314,7 @@ body {
         height: 540px;
         width: 360px;
         background-image: url('../images/sky_day_m.svg');
-        background-repeat: no-repeat;   
+        background-repeat: no-repeat;
     }
 
     #skyNight-mobile {
@@ -287,11 +324,11 @@ body {
         height: 540px;
         width: 360px;
         background-image: url('../images/sky_night_m.svg');
-        background-repeat: no-repeat;    
+        background-repeat: no-repeat;
     }
 
     /*------------ footer ------------*/
-    
+
     .footer {
         width: 100%;
         margin: 5px auto;
@@ -300,7 +337,7 @@ body {
         flex-direction: column;
         max-width: 1280px;
         height: 250px;
-        
+
     }
     .footer-nav {
         display: flex;
@@ -309,12 +346,12 @@ body {
         margin: auto;
         height: 150px;
     }
-    
+
     #button_day {
       max-width: 110px;
       margin: 5px auto;
     }
-    
+
     .icons {
         margin: auto;
         display: flex;
@@ -323,9 +360,8 @@ body {
         flex-wrap: wrap;
         max-width: 400px;
     }
-    
+
     .box {
-        background-color: #EDEDED;
         padding: 2px;
         width: 42px;
         height: 40px;
@@ -333,9 +369,13 @@ body {
         align-items: center;
         margin: 5px;
     }
-    
+
+		.colorDay {background-color: #EDEDED;}
+		.colorNight {background-color: #4A4A4A;}
+
+
     .icon {margin: auto; width: 100%}
-    
+
     .title2 {
         font-family: 'Raleway', sans-serif;
         font-size: 16px;
@@ -346,6 +386,6 @@ body {
         flex-wrap: wrap;
         height: 40px;
     }
-    
-    
+
+
      }
