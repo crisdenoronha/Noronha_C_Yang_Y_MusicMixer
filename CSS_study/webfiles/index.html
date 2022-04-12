@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Soundly Sky</title>   
+	<title>Soundly Sky</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -14,31 +14,38 @@
 <body class="day">
 	<header id="headLine">
         <div class="sound-icons">
-            <object id="volume+" class="button" data="images/volume+.svg" type="image/svg+xml"></object>
-            <object id="volume-" class="button" data="images/volume-.svg" type="image/svg+xml"></object>
-            <object id="no_sound" class="button" data="images/no_sound.svg" type="image/svg+xml"></object>
+            <img id="volume+" class="button" src="images/volume+.svg">
+            <img id="volume-" class="button" src="images/volume-.svg">
+            <img id="no_sound" class="button" src="images/no_sound.svg">
         </div>
             <h1 class="title1">Soundly Sky</h1>
-            <div id="panel">
-                <img src="images/panel.svg" data-bgref="0" alt="panel">
-            </div>
+            <section class="audio-controls">
+              <button id="playButton">PLAY</button>
+              <button id="pauseButton">PAUSE</button>
+              <button id="rewindButton">REWIND</button>
+            </section>
 	</header>
 
+  <section>
+    <h2 class="hidden">Audio Tracks</h2>
+  <!-- add audio element here -->
+    <audio src="audio/Inspiring.mp3" controls></audio>
+  </section>
     <!-- drop-zone -->
 	<section id="drop-sky">
     <h2 class="hidden">sky day</h2>
         <div id="sky" class="">
-            <div class="drop-zone tl"></div>
-			<div class="drop-zone tr"></div>
-			<div class="drop-zone bl"></div>
-			<div class="drop-zone br"></div>
+            <div class="drop-zone one"></div>
+      			<div class="drop-zone two"></div>
+      			<div class="drop-zone three"></div>
+      			<div class="drop-zone four"></div>
         </div>
-    
+
         <div id="sky-mobile" class="">
-            <div class="drop-zone tl"></div>
-			<div class="drop-zone tr"></div>
-			<div class="drop-zone bl"></div>
-			<div class="drop-zone br"></div>
+            <div class="drop-zone one"></div>
+      			<div class="drop-zone two"></div>
+      			<div class="drop-zone three"></div>
+      			<div class="drop-zone four"></div>
         </div>
      </div>
 	</section>
@@ -47,53 +54,52 @@
 	<footer class="footer">
         <h2 class="hidden">Icons Panel DAY</h2>
         <div class="title2">
-            <h3>Drag the images and drop in the sky!</h3>  
+            <h3>Drag the images and drop in the sky!</h3>
         </div>
         <div class="footer-nav">
-            <div id="button_day" class=button><a href="night.html"><img src="images/button_day.svg"></a></div>
+            <div id="button_day" class=button><a href="night.html"><img src="images/button_night.svg"></a></div>
             <!-- these are the draggable pieces -->
             <div class="icons">
-                <div class="box">
-                <img id="note1" draggable="true"  src="images/note1.svg" class="puzzle-image" alt="note1">
-               
+                <div class="box colorDay">
+                <img id="note1" draggable="true"  src="images/note1.svg" class="puzzle-image" data-trackref="Inspiring" alt="note1">
                 </div>
 
-                <div class="box">
-                <img id="note2" draggable="true"  src="images/note2.svg" class="puzzle-image" alt="note2">
+                <div class="box colorDay">
+                <img id="note2" draggable="true"  src="images/note2.svg" class="puzzle-image" data-trackref="STP_ILS" alt="note2">
                 </div>
 
-                <div class="box">
-                <img id="note3" draggable="true"  src="images/note3.svg" class="puzzle-image" alt="note3">
+                <div class="box colorDay">
+                <img id="note3" draggable="true"  src="images/note3.svg" class="puzzle-image" data-trackref="Companion" alt="note3">
                 </div>
 
-                <div class="box">
-                <img id="note4" draggable="true"  src="images/note4.svg" class="puzzle-image" alt="note4">
+                <div class="box colorDay">
+                <img id="note4" draggable="true"  src="images/note4.svg" class="puzzle-image" data-trackref="Able"alt="note4">
                 </div>
 
-                <div class="box">
-                <img id="bird" draggable="true"  src="images/bird.svg" class="puzzle-image" alt="bird">
+                <div class="box colorDay">
+                <img id="bird" draggable="true"  src="images/bird.svg" class="puzzle-image" data-trackref="Blessings" alt="bird">
                 </div>
 
-                <div class="box">
-                <img id="ballon" draggable="true"  src="images/ballon.svg" class="puzzle-image" alt="ballon">                    
+                <div class="box colorDay">
+                <img id="ballon" draggable="true"  src="images/ballon.svg" class="puzzle-image" data-trackref="Deserve" alt="ballon">
                 </div>
 
-                <div class="box">
-                <img id="cloud" draggable="true"  src="images/cloud.svg" class="puzzle-image" alt="cloud"> 
+                <div class="box colorDay">
+                <img id="cloud" draggable="true"  src="images/cloud.svg" class="puzzle-image" data-trackref="Energetic" alt="cloud">
                 </div>
 
-                <div class="box">
-                <img id="butterfly" draggable="true"  src="images/butterfly.svg" class="puzzle-image" alt="butterfly"> 
+                <div class="box colorDay">
+                <img id="butterfly" draggable="true"  src="images/butterfly.svg" class="puzzle-image" data-trackref="Great" alt="butterfly">
                 </div>
 
-                <div class="box">
-                <img id="sun" draggable="true"  src="images/sun.svg" class="puzzle-image" alt="sun"> 
+                <div class="box colorDay">
+                <img id="sun" draggable="true"  src="images/sun.svg" class="puzzle-image" data-trackref="Happy" alt="sun">
                 </div>
 
-                <div class="box">
-                <img id="thunder" draggable="true"  src="images/thunder.svg" class="puzzle-image" alt="thunder"> 
-                </div>       
-            </div>          
+                <div class="box colorDay">
+                <img id="thunder" draggable="true"  src="images/thunder.svg" class="puzzle-image" data-trackref="Indie" alt="thunder">
+                </div>
+            </div>
         </div>
 
 	</footer>
