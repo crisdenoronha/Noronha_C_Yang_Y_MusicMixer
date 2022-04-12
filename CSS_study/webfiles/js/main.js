@@ -27,6 +27,13 @@
 		//console.log('dragged over me');
 	}
 
+  let audioEl = document.querySelector("audio"),
+  playButton = document.getElementById("playButton"),
+  pauseButton = document.getElementById("pauseButton"),
+  rewindButton = document.getElementById("rewindButton");
+
+ 
+
 	function allowDrop(event) {
 		event.preventDefault();
 		console.log('drop on me');
@@ -41,42 +48,47 @@
 
 		this.appendChild(target);
 
-    loadTrack(target.dataset.trackref);
+    let newaudio = document.createElement('audio');
+
+    newaudio.loop = true;
+    
+    // this ` is a backtick - it is a JavaScript template string (lets you use JS expressions inline)
+    // refer to the MDN documentation
+    newaudio.src = `audio/${target.dataset.trackref}.mp3`; // this is the track we want to play
+    newaudio.load();
+
+    // append this to the document
+    document.body.appendChild(newaudio);
+    newaudio.play();
 	}
 
-  let audioEl = document.querySelector("audio"),
-     trackThumbs = document.querySelectorAll(".track-ref"),
-     playButton = document.getElementById("playButton"),
-     pauseButton = document.getElementById("pauseButton"),
-     rewindButton = document.getElementById("rewindButton");
 
-//dropZones with music
-  function loadTrack(track) {
-  let currentTrack = `audio/${track}.mp3`;
-  audioEl.src = currentTrack;
-  playTrack();
- }
+
+//pause all sounds
+function pauseTrack() {
+  let music = document.querySelectorAll('audio');
+  music.forEach(sound => sound.pause());
+
+  // select and loop through all of the audio elements and make them pause
+}
+
+pauseButton.addEventListener("click", pauseTrack);
+
+
+
 
 //play music
   function playTrack(){
-     audioEl.play();
+    let music = document.querySelectorAll('audio');
+    music.forEach(sound => sound.play());
+    // select and loop through all of the audio elements and make them play
   }
 
   playButton.addEventListener("click", playTrack);
 
-//pause music
-  function pauseTrack(){
-     audioEl.pause();
-  }
 
-  pauseButton.addEventListener("click", pauseTrack);
 
-//rewind music
-  function rewindTrack(){
-   audioEl.currentTime = 0;
-   playTrack();
-  }
-  rewindButton.addEventListener("click", rewindTrack);
+
 
 //reset dropZone
 let boxes = document.querySelectorAll('.box'),
