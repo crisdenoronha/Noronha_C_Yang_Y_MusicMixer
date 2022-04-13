@@ -1,0 +1,17 @@
+<svg id="Layer_9" data-name="Layer 9" xmlns="http://www.w3.org/2000/svg" width="67.83" height="63.64" viewBox="0 0 67.83 63.64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #020202;
+      }
+
+      .cls-2 {
+        fill: #231f20;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="39.36 20.93 39.36 63.64 67.83 42.29 39.36 20.93"/>
+  <rect class="cls-2" y="41.66" width="31.19" height="9"/>
+  <rect class="cls-1" y="20.94" width="31.19" height="9"/>
+  <rect class="cls-1" width="59.25" height="9.21"/>
+</svg>

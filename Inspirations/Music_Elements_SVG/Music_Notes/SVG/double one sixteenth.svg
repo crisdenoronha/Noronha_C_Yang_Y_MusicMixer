@@ -1,0 +1,21 @@
+<svg id="double1_16" data-name="double1/16" xmlns="http://www.w3.org/2000/svg" width="46.56" height="70.73" viewBox="0 0 46.56 70.73">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b74f6c;
+        stroke: #f8f7f8;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #f8f7f8;
+        stroke: #b74f6c;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M20.05,61.76s-1.85,11-15.7,7.94c0,0-6.93-3.55-2.2-9.63S8.57,54,16.68,54L17,7.38,46.06.63V54.16s-2.87,8.28-9.46,8.78-8.27-1.18-10-5.91c0,0,2.19-12.66,16.38-10.64l.17-23.13L20.22,29Z"/>
+  <polygon class="cls-2" points="20.22 16 20.22 21.4 42.51 16 42.51 10.76 20.22 16"/>
+</svg>
