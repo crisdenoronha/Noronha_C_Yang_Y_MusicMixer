@@ -10,7 +10,6 @@
   });
 
   function dragstart(event){
-    event.preventDefault();
     console.log('started draggin a piece');
     event.dataTransfer.setData('currentItem', event.target.id);
 
