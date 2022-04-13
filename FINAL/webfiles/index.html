@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Soundly Sky</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body class="day">
+	<header id="headLine">
+        <div class="sound-icons">
+            <img id="volume+" class="button" src="images/volume+.svg">
+            <img id="volume-" class="button" src="images/volume-.svg">
+            <img id="no_sound" class="button" src="images/no_sound.svg">
+        </div>
+            <h1 class="title1">Soundly Sky</h1>
+            <section class="audio-controls">
+              <button id="playButton">PLAY</button>
+              <button id="pauseButton">PAUSE</button>
+              <button id="resetButton">RESET ALL</button>
+            </section>
+	</header>
+
+
+	<section id="drop-sky">        
+    <h2 class="hidden">sky day</h2>
+        <div id="sky" class="">
+            <div class="drop-zone one"></div>
+      		<div class="drop-zone two"></div>
+      		<div class="drop-zone three"></div>
+      		<div class="drop-zone four"></div>
+        </div>
+        <div id="sky-mobile" class="">
+            <div class="drop-zone one"></div>
+      			<div class="drop-zone two"></div>
+      			<div class="drop-zone three"></div>
+      			<div class="drop-zone four"></div>
+        </div>
+     </div>
+	</section>
+   <!-- end of drop-zone -->
+
+	<footer class="footer">
+        <h2 class="hidden">Icons Panel DAY</h2>
+        <div class="title2">
+            <h3>Drag the images and drop in the sky!</h3>
+        </div>
+        <div class="footer-nav">
+            <div id="button_day" class=button><a href="night.html"><img src="images/button_night.svg"></a></div>
+            <!-- these are the draggable pieces -->
+            <div class="icons">
+                <div id="box1" class="box colorDay">
+                <img id="note1" draggable="true"  src="images/note1.svg" class="icon-image" data-trackref="BrickCalm" alt="note1">
+                </div>
+
+                <div id="box2" class="box colorDay">
+                <img id="note2" draggable="true"  src="images/note2.svg" class="icon-image" data-trackref="Groove" alt="note2">
+                </div>
+
+                <div id="box3" class="box colorDay">
+                <img id="note3" draggable="true"  src="images/note3.svg" class="icon-image" data-trackref="Bass05" alt="note3">
+                </div>
+
+                <div id="box4" class="box colorDay">
+                <img id="note4" draggable="true"  src="images/note4.svg" class="icon-image" data-trackref="TwoBeat"alt="note4">
+                </div>
+
+                <div id="box5" class="box colorDay">
+                <img id="bird" draggable="true"  src="images/bird.svg" class="icon-image" data-trackref="Blackbird" alt="bird">
+                </div>
+
+                <div id="box6" class="box colorDay">
+                <img id="ballon" draggable="true"  src="images/ballon.svg" class="icon-image" data-trackref="Vertigo" alt="ballon">
+                </div>
+
+                <div id="box7" class="box colorDay">
+                <img id="cloud" draggable="true"  src="images/cloud.svg" class="icon-image" data-trackref="Windchimes" alt="cloud">
+                </div>
+
+                <div id="box8" class="box colorDay">
+                <img id="butterfly" draggable="true"  src="images/butterfly.svg" class="icon-image" data-trackref="Bushwick" alt="butterfly">
+                </div>
+
+                <div id="box9" class="box colorDay">
+                <img id="sun" draggable="true"  src="images/sun.svg" class="icon-image" data-trackref="Bass04" alt="sun">
+                </div>
+
+                <div id="box10" class="box colorDay">
+                <img id="thunder" draggable="true"  src="images/thunder.svg" class="puzzle-image" data-trackref="Water" alt="thunder">
+                </div>
+            </div>
+        </div>
+
+	</footer>
+
+	<script src="JS/main.js"></script>
+</body>
+</html>
