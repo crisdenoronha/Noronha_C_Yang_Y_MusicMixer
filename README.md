@@ -15,7 +15,7 @@ The contributors are Cristine De Noronha and Ying Yang. The whole process of the
 3. Ying designed the imagess of music elements for the project.
 4. Ying studied ways to include music in drag and drop her study is in the [dev.yy.checkpoint2/Cristine_Ying](https://github.com/crisdenoronha/Noronha_C_Yang_Y_MusicMixer/tree/main/dev.yy.checkpoint2/Cristine_Ying) folder.She wrote the first version of JS and CSS.
 5. Cristine did layout studies and her files are in the [CSS_study](https://github.com/crisdenoronha/Noronha_C_Yang_Y_MusicMixer/tree/main/CSS_study/webfiles) folder.
-6. Cristine changed and improve the JS as the final version (when you click a box without a icon, the icon return to the box).
+6. Cristine changed and improve the JS as the final version (click a box without a icon, the icon returns to the box).
 7. Ying wrote the readme file.
 
 ## History
