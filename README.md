@@ -1,5 +1,6 @@
 # Noronha_C_Yang_Y_MusicMixer
-TODO: The repo is for an authored class music project (mmed-1055) which is developed by Cristine De Noronha and Ying Yang. The idea is to make a musical sky with musical icons. In the repository it contains all the images, css file, html files, AI files and PSD files for the course.
+TODO: The repo is for an authored class music project (mmed-1055) which is developed by Cristine De Noronha and Ying Yang. The idea is to make a musical sky with musical icons. In the repository it contains all the images, css file, html files, AI files and PSD files for the course. The final version of the project is in the "Final" folder.
+
 
 ## Installation
 TODO: In the set up processing, it uses visual code for CSS and HTML5 and find ways on [MDN Web Docs](https://developer.mozilla.org/en-US/). They also learn JS knowledge from [Mozilla](https://developer.mozilla.org/fr/docs/Web/JavaScript).
@@ -18,7 +19,7 @@ The contributors are Cristine De Noronha and Ying Yang. The whole process of the
 
 6. Cristine changed and improve the JS as the final version (click a box without a icon, the icon returns to the box).
 
-7. Ying wrote the readme file and merged everything.
+7. Ying wrote the readme file and merged everything. The final version of the project is in the "Final" folder.
 
 ## History
 TODO: They have a timetable to do the music mixer. They finish 80% design for music mixer before week 8. The music mixer is a good project for them to practice JS and they finish all JS before due date April 13th.
