@@ -10,11 +10,10 @@
   });
 
   function dragstart(event){
-    //event.preventDefault();
+    event.preventDefault();
     console.log('started draggin a piece');
     event.dataTransfer.setData('currentItem', event.target.id);
 
-      //boxes.forEach(box => box.classList.add('stop'));
   }
 
 
@@ -27,7 +26,6 @@
 
  	function dragover(event) {
 		event.preventDefault();
-		//console.log('dragged over me');
 	}
 
  
@@ -56,8 +54,6 @@
 
     newaudio.loop = true;
     
-    // this ` is a backtick - it is a JavaScript template string (lets you use JS expressions inline)
-    // refer to the MDN documentation
     newaudio.src = `audio/${target.dataset.trackref}.mp3`; // this is the track we want to play
     newaudio.load();
 
