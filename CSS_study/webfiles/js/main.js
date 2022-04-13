@@ -6,12 +6,15 @@
   //to DRAG the icon : DRAGSTART; DRAG; DRAGEND
  icons.forEach(icone => {
     icone.addEventListener('dragstart', dragstart);
+
   });
 
   function dragstart(event){
     //event.preventDefault();
     console.log('started draggin a piece');
     event.dataTransfer.setData('currentItem', event.target.id);
+
+      //boxes.forEach(box => box.classList.add('stop'));
   }
 
 
@@ -27,10 +30,11 @@
 		//console.log('dragged over me');
 	}
 
-  let audioEl = document.querySelector("audio"),
-  playButton = document.getElementById("playButton"),
-  pauseButton = document.getElementById("pauseButton"),
-  rewindButton = document.getElementById("rewindButton");
+ 
+  let playButton = document.getElementById("playButton"),
+    pauseButton = document.getElementById("pauseButton"),
+    resetButton = document.getElementById("resetButton");
+  
 
  
 
@@ -76,7 +80,6 @@ pauseButton.addEventListener("click", pauseTrack);
 
 
 
-
 //play music
   function playTrack(){
     let music = document.querySelectorAll('audio');
@@ -86,35 +89,189 @@ pauseButton.addEventListener("click", pauseTrack);
 
   playButton.addEventListener("click", playTrack);
 
+//reset all icons
+function resetPage(){
+  location.reload();
+}
+
+resetButton.addEventListener("click", resetPage);
 
 
-
-
-//reset dropZone
-let boxes = document.querySelectorAll('.box'),
-    box = document.querySelector('.box'),
+//reset dropZone BOX1
+let box1 = document.querySelector('#box1'),
+    box2 = document.querySelector('#box2'),
+    box3 = document.querySelector('#box3'),
+    box4 = document.querySelector('#box4'),
+    box5 = document.querySelector('#box5'),
+    box6 = document.querySelector('#box6'),
+    box7 = document.querySelector('#box7'),
+    box8 = document.querySelector('#box8'),
+    box9 = document.querySelector('#box9'),
+    box10 = document.querySelector('#box10'),
     skyZones = document.querySelectorAll('.drop-zone');
 
-  function iconReturn() {
+  function iconReturn1() {
   skyZones.forEach (zone =>{
 
-    if (zone.childElementCount > 0) {
-    box.appendChild(zone.firstElementChild);
-    audioEl.pause();
+    if (this.childElementCount > 0) {return; }
+
+    else if (zone.childElementCount > 0) {
+     box1.appendChild(zone.firstElementChild)
     }
+
+    let music = document.querySelectorAll('audio');
+    music.forEach(sound => sound.pause());
+
   })
   }
-  	boxes.forEach(item => item.addEventListener('click', iconReturn));
+  	box1.addEventListener('click', iconReturn1);
 
-//animation
+//reset dropZone BOX2
+  function iconReturn2(event) {
+    skyZones.forEach (zone =>{
+  
+      if (this.childElementCount > 0) {return; }
 
-/*function animation() {
-dropZones.forEach (zone =>{
+      else if (zone.childElementCount > 0) {
+       box2.appendChild(zone.firstElementChild)
+      }
 
-  if (zone.childElementCount > 0) {
-  //animation movements here
-  }
-})
-  icons.forEach(item => item.addEventListener('drop', animation));
-}*/
+      let music = document.querySelectorAll('audio');
+      music.forEach(sound => sound.pause());
+      
+    })
+    }
+      box2.addEventListener('click', iconReturn2);
+
+  //reset dropZone BOX3
+  function iconReturn3() {
+    skyZones.forEach (zone =>{
+  
+      if (this.childElementCount > 0) {return; }
+
+      else if (zone.childElementCount > 0) {
+       box3.appendChild(zone.firstElementChild)
+      }
+  
+      let music = document.querySelectorAll('audio');
+      music.forEach(sound => sound.pause());
+      
+    })
+    }
+      box3.addEventListener('click', iconReturn3); 
+
+
+  //reset dropZone BOX4  
+  function iconReturn4() {
+    skyZones.forEach (zone =>{
+  
+      if (this.childElementCount > 0) {return; }
+
+      else if (zone.childElementCount > 0) {
+       box4.appendChild(zone.firstElementChild)
+      }
+
+      let music = document.querySelectorAll('audio');
+      music.forEach(sound => sound.pause());
+    })
+    }
+      box4.addEventListener('click', iconReturn4);
+
+  //reset dropZone BOX5
+    function iconReturn5() {
+      skyZones.forEach (zone =>{
+    
+        if (this.childElementCount > 0) {return; }
+
+        else if (zone.childElementCount > 0) {
+         box5.appendChild(zone.firstElementChild)
+        }
+  
+        let music = document.querySelectorAll('audio');
+        music.forEach(sound => sound.pause());
+      })
+      }
+        box5.addEventListener('click', iconReturn5);
+  
+  //reset dropZone BOX6
+    function iconReturn6() {
+      skyZones.forEach (zone =>{
+    
+        if (this.childElementCount > 0) {return; }
+
+        else if (zone.childElementCount > 0) {
+         box6.appendChild(zone.firstElementChild)
+        }
+  
+        let music = document.querySelectorAll('audio');
+        music.forEach(sound => sound.pause());
+      })
+      }
+        box6.addEventListener('click', iconReturn6);
+
+  //reset dropZone BOX7
+  function iconReturn7() {
+    skyZones.forEach (zone =>{
+  
+      if (this.childElementCount > 0) {return; }
+
+      else if (zone.childElementCount > 0) {
+       box7.appendChild(zone.firstElementChild)
+      }
+
+      let music = document.querySelectorAll('audio');
+      music.forEach(sound => sound.pause());
+    })
+    }
+      box7.addEventListener('click', iconReturn7);
+  
+    //reset dropZone BOX8
+    function iconReturn8() {
+      skyZones.forEach (zone =>{
+    
+        if (this.childElementCount > 0) {return; }
+
+        else if (zone.childElementCount > 0) {
+         box8.appendChild(zone.firstElementChild)
+        }
+  
+        let music = document.querySelectorAll('audio');
+        music.forEach(sound => sound.pause());
+      })
+      }
+        box8.addEventListener('click', iconReturn8);
+
+   //reset dropZone BOX9
+   function iconReturn9() {
+    skyZones.forEach (zone =>{
+  
+      if (this.childElementCount > 0) {return; }
+
+      else if (zone.childElementCount > 0) {
+       box9.appendChild(zone.firstElementChild)
+      }
+
+      let music = document.querySelectorAll('audio');
+      music.forEach(sound => sound.pause());
+    })
+    }
+      box9.addEventListener('click', iconReturn9);
+  
+   //reset dropZone BOX10
+   function iconReturn10() {
+    skyZones.forEach (zone =>{
+  
+      if (this.childElementCount > 0) {return; }
+
+      else if (zone.childElementCount > 0) {
+       box10.appendChild(zone.firstElementChild)
+      }
+
+      let music = document.querySelectorAll('audio');
+      music.forEach(sound => sound.pause());
+    })
+    }
+      box10.addEventListener('click', iconReturn10);
+
+
 })();

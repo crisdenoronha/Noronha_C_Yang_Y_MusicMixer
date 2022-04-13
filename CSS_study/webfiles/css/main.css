@@ -13,6 +13,7 @@ body {
 .night {background-color: #1D1D1B;}
 .hidden { display: none; }
 
+
 /*------------ header ------------*/
 #headLine {
     margin: 10px auto;
@@ -54,10 +55,13 @@ body {
     margin: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     height: 660px;
     width: 1194px;
     background-image: url('../images/sky_day.svg');
 	  background-repeat: no-repeat;
+      z-index: 4;
+      overflow:hidden; 
 }
 
 #skyNight {
@@ -67,7 +71,7 @@ body {
     height: 660px;
     width: 1194px;
     background-image: url('../images/sky_night.svg');
-	  background-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 
 
@@ -80,14 +84,18 @@ body {
 }
 
 .drop-zone {
-	display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 20px;
-  border: 3px dashed #D19954;
-	width: 10%;
-	height: 10%;
-	text-align: center;
+ justify-content: center;
+  background-color: rgba(133, 132, 132, 0.488);
+  opacity: 0.7;
+  border-radius: 10%;
+  width: 15%;
+  height: 20%;
+  text-align: center;
+  z-index: 7;
 }
 
 
@@ -159,6 +167,12 @@ body {
     border-radius: 7px;
     align-items: center;
     margin: 5px;
+}
+
+.stop {
+    background-image: url('../images/stop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .colorDay {background-color: #EDEDED;}
 .colorNight {background-color: #4A4A4A;}
@@ -388,6 +402,5 @@ audio { display: none; }
         flex-wrap: wrap;
         height: 40px;
     }
-
 
      }

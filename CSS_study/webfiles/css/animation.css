@@ -1,0 +1,45 @@
+/*------------ animation notes ------------*/
+
+.note{
+	margin: 0px;
+	padding: 0px;
+    top: 100px;
+	left: 100px;
+	width: 40px;
+	display: block;
+    animation: animate 5s infinite;
+    animation-timing-function: linear;
+    z-index: 5;
+	}
+
+    @keyframes animate {        
+       from{
+           opacity:1;
+           transform: translatey(-1000px);
+        }
+        to {
+            opacity:0;
+            transform: translatey(1000px);
+        }
+
+    }  
+
+    .note{
+        margin: 0px;
+        padding: 0px;
+    
+        top: 100px;
+        left: 50px;
+        width: 40px;
+        display: block;
+        animation: animate 5s infinite;
+        animation-timing-function: linear;
+        z-index: 5;
+        }
+    
+        @keyframes animate {        
+           from{transform: translatey(-1000px);}
+            to {transform: translatey(1000px);}
+        }  
+    
+/*------------ animation stars ------------*/  
