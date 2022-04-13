@@ -60,8 +60,6 @@ body {
     width: 1194px;
     background-image: url('../images/sky_day.svg');
 	  background-repeat: no-repeat;
-      z-index: 4;
-      overflow:hidden; 
 }
 
 #skyNight {
